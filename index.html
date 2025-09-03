@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
         <link rel="stylesheet" href="./assets/css/styles.css">
     </head>
 
@@ -37,57 +38,248 @@
         <section class="todays-sites-section">
             <div class="container">
                 <div class="slider">
-                    <div id="owl-carousel" class="owl-carousel owl-theme">
-                        <div class="sliderItem">
-                            <div class="slider-container image-container">
-                                <img src="./assets/images/aadc-featured-image.png" alt="">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="sliderItem swiper-slide">
+                                <div class="slider-container image-container" data-title="Slider 1"
+                                    data-author="Author 1"
+                                    data-plugisn="[{'link':'#','image':'./assets/images/logo-seopress-square.png','name':'Seo Press'}]"
+                                    data-builder="[{'link':'#','image':'./assets/images/custom-theme-icon.png','name':'Custom theme'}]">
+                                    <img src="./assets/images/aadc-featured-image.png" alt="">
+                                </div>
                             </div>
-                            <div class="slider-content">
-                                <div class="left-section">
-                                    <h2>Heart Aerospace<svg class="brxe-svg animated-arrow-right" id="brxe-kbnpnk"
-                                            xmlns="http://www.w3.org/2000/svg" width="18" height="19"
-                                            viewBox="0 0 18 19" fill="none">
+                        </div>
+                    </div>
+                    <div class="slider-content">
+                        <div class="left-section">
+                            <h2 id="project-name">Heart Aerospace<svg class="brxe-svg animated-arrow-right"
+                                    id="brxe-kbnpnk" xmlns="http://www.w3.org/2000/svg" width="18" height="19"
+                                    viewBox="0 0 18 19" fill="none">
+                                    <path
+                                        d="M9.749 2.75L12.2187 5.21975L6.96875 10.4698L8.02925 11.5302L13.2793 6.28025L15.749 8.75V2.75H9.749Z"
+                                        fill="#0B0D0C"></path>
+                                    <path
+                                        d="M14.25 14.75H3.75V4.25H9L7.5 2.75H3.75C2.92275 2.75 2.25 3.42275 2.25 4.25V14.75C2.25 15.5773 2.92275 16.25 3.75 16.25H14.25C15.0773 16.25 15.75 15.5773 15.75 14.75V11L14.25 9.5V14.75Z"
+                                        fill="#0B0D0C"></path>
+                                </svg></h2>
+                            <p class="slider-author" id="slider-author">
+                                By Heart Aerospace
+                            </p>
+                        </div>
+                        <div class="right-section">
+                            <P>Built with</P>
+                            <ul class="built-width-icons">
+                                <li>
+                                    <a href="#">
+                                        <img src="./assets/images/custom-theme-icon.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./assets/images/logo-seopress-square.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./assets/images/ele-custom-skin-plugin.png" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="slider-pagination">
+                        <h2 class="text">4/7</h2>
+                        <div class="progress-bar">
+                            <div class="progress-bar-line"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="listings">
+            <div class="container">
+                <div class="listing-filter">
+                    <form class="list-form">
+                        <div>
+                            <label for="categories">Categories</label>
+                            <select name="categories">
+                                <option value="all">All Site Categories</option>
+                                <option value="Agency">Agency</option>
+                                <option value="Corporate">Corporate</option>
+                                <option value="Real Estate">Real Estate</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="plugins">Plugins</label>
+                            <select name="plugins">
+                                <option value="all">All Site Plugins</option>
+                                <option value="accelerate">Accelerate</option>
+                                <option value="All In One Seo">All In One Seo</option>
+                                <option value="WP Rocket">All In One Seo</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="builders">Builders</label>
+                            <select name="builders">
+                                <option value="all">All Site Builders</option>
+                                <option value="elementor">Elementor</option>
+                                <option value="thrive">Thrive Builder</option>
+                                <option value="wpbakery">WP Bakery</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="Search">Search</label>
+                            <input type="text" name="Search" placeholder="Search">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="listing-grid">
+                    <div class="listing-card">
+                        <a href="#"><img src="./assets/images/banchmarketing.png" alt=""></a>
+                        <div class="listing-footer">
+                            <div class="listing-content">
+                                <a href="#">
+                                    <h3>Banch Marketing <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 19"
+                                            fill="none">
                                             <path
                                                 d="M9.749 2.75L12.2187 5.21975L6.96875 10.4698L8.02925 11.5302L13.2793 6.28025L15.749 8.75V2.75H9.749Z"
                                                 fill="#0B0D0C"></path>
                                             <path
                                                 d="M14.25 14.75H3.75V4.25H9L7.5 2.75H3.75C2.92275 2.75 2.25 3.42275 2.25 4.25V14.75C2.25 15.5773 2.92275 16.25 3.75 16.25H14.25C15.0773 16.25 15.75 15.5773 15.75 14.75V11L14.25 9.5V14.75Z"
                                                 fill="#0B0D0C"></path>
-                                        </svg></h2>
-                                    <p class="slider-author">
-                                        By Heart Aerospace
-                                    </p>
-                                </div>
-                                <div class="right-section">
-                                    <P>Built with</P>
-                                    <ul class="built-width-icons">
-                                        <li><img src="./assets/images/custom-theme-icon.png" alt=""></li>
-                                        <li><img src="./assets/images/logo-seopress-square.svg" alt=""></li>
-                                        <li><img src="./assets/images/ele-custom-skin-plugin.png" alt=""></li>
-                                    </ul>
-                                </div>
+                                        </svg></h3>
+                                </a>
+                                <p class="showcase-author">By <a href="#" target="_blank">Banch Marketing</a></p>
+                            </div>
+                            <div class="listing-plugin">
+                                <img src="./assets/images/custom-theme-icon.png" alt="">
+                                <img src="./assets/images/flying-press-plugin.png" alt="">
                             </div>
                         </div>
-                        <div class="sliderItem">
-                            2
+                    </div>
+                    <div class="listing-card">
+                        <a href="#"><img src="./assets/images/banchmarketing.png" alt=""></a>
+                        <div class="listing-footer">
+                            <div class="listing-content">
+                                <a href="#">
+                                    <h3>Banch Marketing <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 19"
+                                            fill="none">
+                                            <path
+                                                d="M9.749 2.75L12.2187 5.21975L6.96875 10.4698L8.02925 11.5302L13.2793 6.28025L15.749 8.75V2.75H9.749Z"
+                                                fill="#0B0D0C"></path>
+                                            <path
+                                                d="M14.25 14.75H3.75V4.25H9L7.5 2.75H3.75C2.92275 2.75 2.25 3.42275 2.25 4.25V14.75C2.25 15.5773 2.92275 16.25 3.75 16.25H14.25C15.0773 16.25 15.75 15.5773 15.75 14.75V11L14.25 9.5V14.75Z"
+                                                fill="#0B0D0C"></path>
+                                        </svg></h3>
+                                </a>
+                                <p class="showcase-author">By <a href="#" target="_blank">Banch Marketing</a></p>
+                            </div>
+                            <div class="listing-plugin">
+                                <img src="./assets/images/custom-theme-icon.png" alt="">
+                                <img src="./assets/images/flying-press-plugin.png" alt="">
+                            </div>
                         </div>
-                        <div class="sliderItem">
-                            3
+                    </div>
+                    <div class="listing-card">
+                        <a href="#"><img src="./assets/images/banchmarketing.png" alt=""></a>
+                        <div class="listing-footer">
+                            <div class="listing-content">
+                                <a href="#">
+                                    <h3>Banch Marketing <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 19"
+                                            fill="none">
+                                            <path
+                                                d="M9.749 2.75L12.2187 5.21975L6.96875 10.4698L8.02925 11.5302L13.2793 6.28025L15.749 8.75V2.75H9.749Z"
+                                                fill="#0B0D0C"></path>
+                                            <path
+                                                d="M14.25 14.75H3.75V4.25H9L7.5 2.75H3.75C2.92275 2.75 2.25 3.42275 2.25 4.25V14.75C2.25 15.5773 2.92275 16.25 3.75 16.25H14.25C15.0773 16.25 15.75 15.5773 15.75 14.75V11L14.25 9.5V14.75Z"
+                                                fill="#0B0D0C"></path>
+                                        </svg></h3>
+                                </a>
+                                <p class="showcase-author">By <a href="#" target="_blank">Banch Marketing</a></p>
+                            </div>
+                            <div class="listing-plugin">
+                                <img src="./assets/images/custom-theme-icon.png" alt="">
+                                <img src="./assets/images/flying-press-plugin.png" alt="">
+                            </div>
                         </div>
-                        <div class="sliderItem">
-                            4
+                    </div>
+                </div>
+
+                <div class="load-more-btn-wrapper">
+                    <a href="#" class="load-more-button">
+                        LOAD MORE
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+        <footer>
+            <div class="footer-container">
+                <div class="container">
+                    <div class="footer-grid">
+                        <div class="logo-div">
+                            <img src="./assets/images/wpmade-logo.png" alt="">
+                            <p>Explore and find some of the
+                                best designs out there.</p>
                         </div>
-                        <div class="sliderItem">
-                            5
+                        <div class="legal-div">
+                            <h4>LEGAL</h4>
+                            <ul>
+                                <li><a href="#">Privacy & Policy</a></li>
+                                <li><a href="#">Terms & Services</a></li>
+                                <li><a href="#">Cookie Policy</a></li>
+                            </ul>
                         </div>
-                        <div class="sliderItem">
-                            6
+                        <div class="navigation-div">
+                            <h4>NAVIGATION</h4>
+                            <ul>
+                                <li><a href="#">Discover</a></li>
+                                <li><a href="#">This week winners</a></li>
+                                <li><a href="#">Resources</a></li>
+                            </ul>
+                        </div>
+                        <div class="support-div">
+                            <h4>SUPPORT</h4>
+                            <a href="#" class="email-link">contact@wpmade.design</a>
+                            <ul class="social-icons">
+                                <li>
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1227"
+                                            viewBox="0 0 1200 1227" fill="none">
+                                            <path
+                                                d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z"
+                                                fill="white"></path>
+                                        </svg></a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <svg class="brxe-icon c-footer__top-column-social"
+                                            xmlns="http://www.w3.org/2000/svg" width="256" height="256"
+                                            viewBox="0 0 256 256" xml:space="preserve">
+                                            <g
+                                                style="stroke:none;stroke-width:0;stroke-dasharray:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;fill:none;fill-rule:nonzero;opacity:1">
+                                                <path
+                                                    d="M25.334 90c3.415-2.853 8.943-12.256 10.189-17.048.671-2.581 3.437-13.114 3.437-13.114 1.799 3.43 7.054 6.334 12.644 6.334 16.638 0 28.626-15.301 28.626-34.312C80.229 13.636 65.357 0 46.22 0 22.415 0 9.771 15.981 9.771 33.382c0 8.091 4.307 18.164 11.198 21.371 1.045.486 1.604.272 1.845-.738.183-.767 1.113-4.513 1.532-6.256.134-.557.068-1.036-.383-1.582-2.279-2.764-4.105-7.848-4.105-12.589 0-12.167 9.213-23.94 24.909-23.94 13.552 0 23.042 9.235 23.042 22.443 0 14.923-7.536 25.261-17.341 25.261-5.415 0-9.469-4.478-8.169-9.968 1.555-6.558 4.569-13.634 4.569-18.367 0-4.237-2.274-7.771-6.98-7.771-5.536 0-9.982 5.727-9.982 13.397 0 4.886 1.65 8.19 1.65 8.19s-5.467 23.115-6.469 27.421c-1.109 4.764-.674 11.476-.191 15.84z"
+                                                    style="stroke:none;stroke-width:1;stroke-dasharray:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;fill:#fff;fill-rule:nonzero;opacity:1"
+                                                    transform="translate(1.407 1.407)scale(2.81)"></path>
+                                            </g>
+                                        </svg></a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+            <div class="copyright">
+                <p>©2025 All rights reserved to WPMade</p>
+            </div>
+        </footer>
     </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.3.0/jquery-migrate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./assets/js/script.js"></script>
 
 </html>
